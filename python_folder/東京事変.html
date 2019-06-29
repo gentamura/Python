@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="ja" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>MediaWiki API の結果 - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"Special","wgCanonicalSpecialPageName":"ApiHelp","wgNamespaceNumber":-1,"wgPageName":"特別:ApiHelp","wgTitle":"ApiHelp","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":false,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"ja","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"ja","wgMonthNames":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgMonthNamesShort":["","1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],"wgRelevantPageName":"特別:ApiHelp","wgRelevantArticleId":0,"wgRequestId":"V7rOxApAID8AACPty1wAAAAX","wgIsProbablyEditable":false,"wgWikiEditorEnabledModules":{"toolbar":true,"dialogs":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgVisualEditor":{"pageLanguageCode":"ja","pageLanguageDir":"ltr","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"ja","wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"日本語","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgCentralAuthMobileDomain":false,"wgVisualEditorToolbarScrollOffset":0});mw.loader.state({"ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user.cssprefs":"ready","user":"ready","user.options":"loading","user.tokens":"loading","mediawiki.apipretty":"ready","ext.pygments":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.nojs":"ready","ext.tmh.thumbnail.styles":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.options",function($,jQuery,require,module){mw.user.options.set({"variant":"ja"});});mw.loader.implement("user.tokens",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/;
+
+});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","ext.centralauth.centralautologin","ext.visualEditor.desktopArticleTarget.init","ext.uls.init","ext.uls.interface","mw.MediaWikiPlayer.loader","mw.PopUpMediaTransform"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=ja&amp;modules=ext.gadget.ReferenceTooltips%2CVectorClassicFonts%2CWikiMiniAtlas%2Cswitcher%7Cext.pygments%2CwikimediaBadges%7Cext.tmh.thumbnail.styles%7Cext.uls.nojs%7Cext.visualEditor.desktopArticleTarget.noscript%7Cmediawiki.apipretty%2CsectionAnchor%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.skinning.interface&amp;only=styles&amp;skin=apioutput"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=ja&amp;modules=startup&amp;only=scripts&amp;skin=apioutput"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=ja&amp;modules=site.styles&amp;only=styles&amp;skin=apioutput"/>
+<meta name="generator" content="MediaWiki 1.28.0-wmf.15"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (ja)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//ja.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="alternate" type="application/atom+xml" title="WikipediaのAtomフィード" href="/w/index.php?title=%E7%89%B9%E5%88%A5:%E6%9C%80%E8%BF%91%E3%81%AE%E6%9B%B4%E6%96%B0&amp;feed=atom"/>
+<link rel="canonical" href="https://ja.wikipedia.org/wiki/%E7%89%B9%E5%88%A5:ApiHelp"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns--1 ns-special mw-special-ApiHelp page-特別_ApiHelp rootpage-特別_ApiHelp skin-apioutput action-view feature-page-action-bar-v2">
+		<div class="mw-body" role="main">
+			<h1 class="firstHeading">MediaWiki API の結果</h1>
+			<div class="mw-body-content">
+				<div id="mw-content-text"><div class="api-pretty-header"><p>このページは XML 形式を HTML で表現したものです。HTML はデバッグに役立ちますが、アプリケーションでの使用には適していません。
+</p><p><var>format</var> パラメーターを指定すると出力形式を変更できます 。XML 形式の非 HTML 版を閲覧するには、format=xml を設定してください。
+</p><p>詳細情報については <a href="//www.mediawiki.org/wiki/API" class="extiw" title="mw:API">完全な説明文書</a>または <a href="/wiki/%E7%89%B9%E5%88%A5:ApiHelp/main" title="特別:ApiHelp/main">API のヘルプ</a>を参照してください。
+</p></div><div dir="ltr"><div class="mw-highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="nt">&lt;api</span> <span class="na">batchcomplete=</span><span class="s">&quot;&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;query&gt;</span>
+    <span class="nt">&lt;pages&gt;</span>
+      <span class="nt">&lt;page</span> <span class="na">_idx=</span><span class="s">&quot;137591&quot;</span> <span class="na">pageid=</span><span class="s">&quot;137591&quot;</span> <span class="na">ns=</span><span class="s">&quot;0&quot;</span> <span class="na">title=</span><span class="s">&quot;東京事変&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;revisions&gt;</span>
+          <span class="nt">&lt;rev</span> <span class="na">contentformat=</span><span class="s">&quot;text/x-wiki&quot;</span> <span class="na">contentmodel=</span><span class="s">&quot;wikitext&quot;</span> <span class="na">xml:space=</span><span class="s">&quot;preserve&quot;</span><span class="nt">&gt;</span>{{Infobox Musician <span class="ni">&amp;lt;</span>!--プロジェクト:音楽家を参照--<span class="ni">&amp;gt;</span>
+| Name              = 東京事変<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>Tokyo Incidents
+| Background        = band
+| Alias             = 事変
+| Origin            = {{JPN}}
+| Genre             = [[ロック (音楽)|ロック]]<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>[[ポピュラー音楽|ポップス]]
+| Occupation        = [[バンド (音楽)|バンド]]
+| Years_active      = [[2003年]][[7月18日]]-[[2012年]][[2月29日]]
+| Label             = [[EMIミュージック・ジャパン]]/[[Virgin Music]]
+| Production        =
+| Associated_acts   = [[井上雨迩]]
+| Influences =
+| URL               = [http://www.tokyojihen.com/ 東京事変 トップページ]
+| Current_members = [[椎名林檎]]（[[ボーカル|vocal]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[亀田誠治]]（[[ベース (弦楽器)|bass]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[畑利樹|刄田綴色]]（[[ドラムセット|drums]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[浮雲 (ギタリスト)|浮雲]]（[[ギター|guitar]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[伊澤一葉]]（[[キーボード_(楽器)|key]]）
+| Past_members = [[ヒラマミキオ|晝海幹音]]（[[ギター|六弦]]）<span class="ni">&amp;lt;</span>br /<span class="ni">&amp;gt;</span>[[ヒイズミマサユ機|H是都M]]（[[鍵盤楽器|鍵盤]]）
+}}
+&#39;&#39;&#39;東京事変&#39;&#39;&#39;（とうきょうじへん、英称：{{lang|en|Tokyo Incidents}}<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>シングル『[[修羅場 (曲)|修羅場]]』、アルバム『[[大人 (アダルト)|大人（アダルト）]]』ブックレット。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.tv-asahi.co.jp/music/contents/after/0056/|title=ミュージックステーション|date=2005年11月4日 |accessdate=2007年6月1日 |author=MUSIC STATION}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>、{{lang|en|Incidents Tokyo}}<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>アルバム『[[スポーツ (東京事変のアルバム)|スポーツ]]』ブックレット。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.kronekodow.com/english/musician/musician03.html|title= SR NEKOYANAGI LINE Incidents Tokyo|date=|accessdate=2014-11-23|publisher= [[黒猫堂]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>）は、かつて[[椎名林檎]]を中心に結成された[[日本]]の5人組[[バンド (音楽)|バンド]]である。所属レコード会社は[[EMIミュージック・ジャパン]]/[[Virgin Music]]。[[2003年]]に結成され、[[2012年]]の[[閏日]]に解散した。
+
+== 概要 ==
+=== 結成の経緯 ===
+2003年当時、引退を考えるほど音楽活動の継続にモチベーションを見出せなかった椎名林檎が、「メンバーたちのために書き下ろすつもりで曲を書けば意欲が湧くのではないか」と考えて結成<span class="ni">&amp;lt;</span>ref name=<span class="ni">&amp;quot;</span>rockinonjapan2014.11.23<span class="ni">&amp;quot;&amp;gt;</span>{{Cite journal |和書 |publisher= [[ロッキング・オン]] |year= 2014 |month= 12 |title= 椎名林檎 ソロ5年半ぶりの傑作『日出処』のすべて |journal=ROCKIN’ON JAPAN 12月号 |volume= 28 |issue= 17 |serial= 445 |pages= 48-72 |accessdate= 2014-11-23}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。もともとは椎名のバックバンドだった。
+
+=== メンバー交代 ===
+2005年、所属バンド「[[PE&#39;Z]]」での活動と両立できないとして[[H ZETT M|H是都M]]が脱退することになり、生ピアノが弾けるキーボーディストを探そうとしたときに彼に紹介された[[伊澤一葉]]を思い出し、彼の楽曲も欲しかったので参加をオファーした<span class="ni">&amp;lt;</span>ref name=<span class="ni">&amp;quot;</span>rockinonjapan2014.11.23<span class="ni">&amp;quot;</span>/<span class="ni">&amp;gt;&amp;lt;</span>ref name=<span class="ni">&amp;quot;</span>toshibaemi1<span class="ni">&amp;quot;&amp;gt;</span>{{cite interview|subject=東京事変|interviewer=  |title= オフィシャルインタビュー 1/2|url= http://www.toshiba-emi.co.jp/tokyojihen/pop/index2_j.htm |program= [[東芝EMI]] |date= |accessdate= 2016-08-01 |archiveurl= http://web.archive.org/web/20051125205041/http://www.toshiba-emi.co.jp/tokyojihen/pop/index2_j.htm |archivedate= 2005-11-25 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。またその間に[[ヒラマミキオ|晝海幹音]]もソロ活動に集中するために脱退することになり、椎名の以前からの知人であった[[浮雲 (ギタリスト)|浮雲]]が代わりに参加することとなった<span class="ni">&amp;lt;</span>ref name=<span class="ni">&amp;quot;</span>rockinonjapan2014.11.23<span class="ni">&amp;quot;</span>/<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite web |url= http://www.toshiba-emi.co.jp/tokyojihen/news/index_j.htm|title= 東京事変 セカンドシーズンへ|publisher= [[東芝EMI]]|date= 2005-07-01 |accessdate= 2016-08-07 |archiveurl= http://web.archive.org/web/20050703015040/http://www.toshiba-emi.co.jp/tokyojihen/news/index_j.htm|archivedate=2005-07-03}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+全国ツアー「[[Dynamite out#東京事変 live tour 2005 “dynamite!”|dynamite!]]」中には2人の脱退は決まっていたので、せめてピアノだけでも欲しいということでツアー終了の翌日から椎名はまず伊澤の消息を探り始めた。初めは「新しくバンド（[[あっぱ]]）を始めたばかりだし、J-POPの超メジャー・フィールドで自分がやれるとは思わない」などと断られていたが、最終的には彼の承諾を得て2005年4月末に加入が決定した。<span class="ni">&amp;lt;</span>ref name=<span class="ni">&amp;quot;</span>toshibaemi1<span class="ni">&amp;quot;</span>/<span class="ni">&amp;gt;</span>
+
+ギタリストについては、生半可なメンバーを入れるくらいなら曲ごとに最強のゲストを呼んだ方が良いとして当初は入れないことにしていた。椎名は多忙の亀田の代わりにキーボードの伊澤に自分のパートとベースラインを同時に弾いてもらってドラムの刄田との3人でリハーサル（音合わせ）を始めたが、伊澤に「CDにした時の作品が想像出来ない」と言われてギタリストを呼ぶことにした。色々試した中でメンバーが気に入ったのは2ndアルバムのデモで演奏していた浮雲だったが、椎名は趣味の音楽制作などの仕事にしない部分でのパートナーであり、デモの制作を手伝ってもらったり<span class="ni">&amp;lt;</span>ref group=<span class="ni">&amp;quot;</span>注<span class="ni">&amp;quot;&amp;gt;</span>2ndアルバムだけでなく1stの時も椎名はデモ音源のギターを弾いてもらっていた。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>、前メンバー脱退の際には相談に乗ってもらったりしていた彼を加入させることはバンドに自分のエゴを持ち込むようで抵抗があった。彼の方も「誰も弾かなかったら俺が弾いてやるよ」という感じでなかなかやるとは言わず、結局、加入が決まったのはアルバム『[[大人 (アダルト)|大人（アダルト）]]』レコーディングのわずか2、3日前だった。<span class="ni">&amp;lt;</span>ref name=<span class="ni">&amp;quot;</span>toshibaemi1<span class="ni">&amp;quot;</span>/<span class="ni">&amp;gt;</span>
+
+== 楽曲製作 ==
+=== デモ ===
+椎名と伊澤は[[デモテープ|デモ]]の段階で[[譜面]]を書いてくる。浮雲の場合は現場で椎名や伊澤が譜面に起こす。3人ともシンガー・ソングライター気質ではないのでアレンジまで含めた作曲をしてくるため、そこから作者の意図通りにそれを具現化したりバンド全員で編曲したり、あるいは椎名と亀田の独特なやり方に当てはめて作ったりと、曲を完成させるやり方は無数にある。逆に亀田のデモは、他のメンバーのデモがドラムなど色々な音を入れてくるのに対し、鼻歌や[[打ち込み]]もあるが[[アコースティック・ギター]]かピアノと自分自身の歌による弾き語りがほとんどで、しかも普段の仕事ではプロデュースやアレンジばかりでメロディを作る機会はほとんどないのに東京事変では基本的にメロディと仮歌だけでアレンジは施していないものを提供する。<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal |和書 |publisher= [[リットーミュージック]] |year= 2010|month= |title= FEATURED BASSISTS 1
+亀田誠治／東京事変|journal=ベースマガジン 3月号 |volume= |issue= |serial= |pages= |accessdate= 2014-12-06}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite interview|subject=東京事変|interviewer=小野田雄 |title=「閃光少女」インタビュー|url= http://www.tokyojihen.com/vmc/artist/domestic/tokyojihen/interview_071121.php|program= [[EMIミュージック・ジャパン]] |date= |accessdate= 2016-08-03 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>
+
+=== 作詞 ===
+2枚目のアルバム『大人』までは椎名が歌詞を担当し、3枚目の『娯楽』から5枚目の『大発見』までは、一部の曲を浮雲と伊澤も書いている。バンドとして最後にリリースした[[ミニアルバム]]『color bars』では、メンバー全員が作詞を行っている。
+
+=== 作曲 ===
+バンドとしてのデビュー曲であるファースト・シングル「群青日和」はH是都Mが作曲したが、アルバム『教育』と『大人（アダルト）』およびセカンド・シングル「遭難」収録の楽曲のほとんどは椎名の手による。3枚目のアルバム『娯楽（バラエティ）』とそれに関連するシングルでは椎名は参加せず、彼女以外のバンドメンバー（浮雲、伊澤、亀田）が作曲した。4枚目のアルバム『スポーツ』とそれに付随するシングルからは再び椎名も作曲に参加し、一部の楽曲では初めてメンバーと共作した。5枚目のアルバム『大発見』では、前作以上に共作曲が増えている。バンド最後のアルバム『color bars』では、メンバー全員が作曲を行っている。
+
+=== 編曲・プロデュース ===
+編曲は基本的にバンド全体で行うが、セカンドアルバム『大人（アダルト）』では椎名および伊澤が中心となって行った<span class="ni">&amp;lt;</span>ref group=<span class="ni">&amp;quot;</span>注<span class="ni">&amp;quot;&amp;gt;</span>『大人』に収録された「秘密」と「手紙」では、前者は伊澤、後者は椎名が単独で編曲を行っている。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+プロデュースは、椎名とはソロ時代からの付き合い<span class="ni">&amp;lt;</span>ref group=<span class="ni">&amp;quot;</span>注<span class="ni">&amp;quot;&amp;gt;</span>4枚目のシングル「[[本能 (曲)|本能]]」やセカンドアルバム『[[勝訴ストリップ]]』の頃から。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>となる[[レコーディング・エンジニア]]の[[井上雨迩]]。
+
+=== レコーディング ===
+レコーディングはそれぞれが個別に録音するバラ録りではなく、バンド・メンバー全員で一斉に演奏して行う[[一発録]]<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://kame-on.com/college/faculty_of_arts/seminar/07.html|title=講義7：スウィングを感じよう!|work=亀田大学芸術学部|date=2013-09-19|accessdate=2015-01-26 |author=[[亀田誠治|亀の恩返し]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+== メンバー ==
+=== 最終メンバー ===
+* [[椎名林檎]]（シイナ リンゴ<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.kronekodow.com/musician/musician01.html|title= SR 猫柳本線 椎名 林檎 / Sheena Ringo|date=|accessdate=2014-11-23|publisher= [[黒猫堂]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>）- [[声|vox]]（声弦）
+* [[畑利樹|刄田綴色]]（ハタ トシキ）- [[ドラムセット|drums]]（太鼓）
+* [[亀田誠治]]（カメダ セイジ<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.kronekodow.com/musician/musician07.html|title= SR 猫柳本線 亀田 誠治 / Kameda Seiji|date=|accessdate=2014-11-23|publisher= [[黒猫堂]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>）- [[ベース (弦楽器)|bass]]（四弦）
+* [[浮雲 (ギタリスト)|浮雲]]（ウキグモ）- [[ギター|guitar]]
+* [[伊澤一葉]]（イザワ イチヨウ）- [[キーボード (楽器)|key]] and guitar
+
+=== 元メンバー ===
+2005年7月1日まで参加。
+* [[ヒラマミキオ|晝海幹音]]（ヒラマ ミキオ）- [[ギター|六弦]]
+* [[H ZETT M|H是都M]]（エイチ ゼット エム）- [[キーボード (楽器)|鍵盤]]
+
+&#39;&#39;デビュー前の表記は[[Electric Mole #東京事変|こちら]]を参照。&#39;&#39;
+
+=== サポートメンバー ===
+* [[佐野康夫]] - ドラム
+: 2006年7月に行われたライブイベント「[[SOCIETY OF THE CITIZENS|SOCIETY OF THE CITIZENS vol.1]]」で、骨折していた刄田の代りに出演。
+
+== 略歴 ==
+=== デビュー前 ===
+[[2003年]][[7月18日]]、[[ロフト (ライブハウス)|新宿ロフト]]で行われた[[JIGHEAD]]レコ発ライブに東京事変として初めて出演。その後、同年8月より行われた椎名のライブツアー「[[Electric Mole|椎名林檎 実演ツアー 雙六エクスタシー]]」にも出演したが、あくまで[[バックバンド]]としての出演であった。
+
+=== 2004年 - 2005年 ===
+[[2004年]]5月30日、椎名がバンド「東京事変」として活動していくことを宣言、同年7月24日には「0724YAMABIKARI」にて、宣言後初の[[イベント]]での登場となった。その後、[[フジ・ロック・フェスティバル]]を含むいくつかのライブ参加を経て、[[9月8日]]に[[東芝EMI]]（当時）から[[シングル]]『[[群青日和]]』で[[デビュー]]を果たす。続いて10月には2枚目のシングル『[[遭難 (曲)|遭難]]』、11月には1作目のアルバム『&#39;&#39;&#39;[[教育 (東京事変のアルバム)|教育]]&#39;&#39;&#39;』、12月には[[ミュージック・ビデオ]]集『[[tokyo incidents vol.1]]』を、4ヶ月連続で発売した。
+
+[[2005年]]には、初のライブツアー「[[Dynamite out|東京事変 live tour 2005 “dynamite!”]]」を開催。しかし同年7月1日、[[H ZETT M|H是都M]]と[[ヒラマミキオ|晝海幹音]]（現・ヒラマミキオ）の2名が、それぞれの活動のためにバンドを離れることを発表した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.vibe-net.com/news/?news=0023287|title= 東京事変　メンバー2人が脱退 |date=2005年7月1日 |accessdate=2013年1月24日 |author=[http://www.vibe-net.com/ VIBE]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>{{refnest|group=注|なお、この2名の脱退はツアーが始まる前には既に決定していたという<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal |和書 |publisher= [[ロッキング・オン]] |year= 2006 |month= |title= |journal=ROCKIN’ON JAPAN 2月号 |volume= |issue= |serial= |page= 63}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。}}。
+
+=== 2005年 - 2008年 ===
+2005年11月、3枚目のシングル『[[修羅場 (曲)|修羅場]]』と2作目のアルバム『&#39;&#39;&#39;[[大人 (アダルト)|大人（アダルト）]]&#39;&#39;&#39;』の製作に合わせ、[[伊澤一葉]]と[[浮雲 (ギタリスト)|浮雲]]の2名がバンドに参加<span class="ni">&amp;lt;</span>ref group=<span class="ni">&amp;quot;</span>注<span class="ni">&amp;quot;&amp;gt;</span>この2人が加わったことにより、最終的な顔ぶれとなった。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。また、[[シンボルマーク]]が[[折り鶴]]から[[孔雀]]になった。
+
+[[2006年]]1月25日に発売されたアルバム『大人（アダルト）』は、バンドとして初の[[オリコンチャート]]第1位獲得を果たした<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://www.oricon.co.jp/news/rankmusic/10743/|title=東京事変、シングル、アルバム通じて初の№1獲得!|date=2006年1月30日 |accessdate=2007年6月1日 |author=[[オリコンチャート|オリコン]]}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。また、2月には[[日本武道館]]と[[大阪城ホール]]にて新メンバーの顔見世ライブ「DOMESTIC! Virgin LINE」、4月からは全国17都市でニュー・アルバムをひっさげての約2ヶ月にわたるライブツアー「[[Just can&#39;t help it.|東京事変 “DOMESTIC!” Just can&#39;t help it.]]」を立て続けに開催した。同年末には、[[COUNTDOWN JAPAN#COUNT DOWN JAPAN 06/07|COUNTDOWN JAPAN 06/07]]（12月30日：幕張、12月31日：大阪）にも出演した。
+
+[[2007年]]7月11日には4枚目のシングル『[[OSCA (曲)|OSCA]]』、8月22日には5枚目のシングル『[[キラーチューン]]』を発売。9月26日には、3作目のアルバム『&#39;&#39;&#39;[[娯楽 (バラエティ)|娯楽（バラエティ）]]&#39;&#39;&#39;』を発売した。10月18日からは、アルバムからの楽曲をフィーチャーした、全国7都市での[[ライブハウス]]ツアー「[[Spa <span class="ni">&amp;amp;</span> Treatment|東京事変 live tour 2007 Spa <span class="ni">&amp;amp;</span> Treatment]]」が開催された。なお、椎名は前作『大人（アダルト）』発売の際のインタビューでの「（今後について）自分は曲を書かず、作詞と歌のプレイだけに関わったアルバムを作ってみたい」といった発言<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{Cite journal |和書 |publisher= [[ロッキング・オン]] |year= 2006 |month= |title= |journal=ROCKIN’ON JAPAN 2月号 |volume= |issue= |serial= |page= 64}}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>の通り、シングル「OSCA」、「キラーチューン」、およびアルバム『娯楽（バラエティ）』では一部の作詞と歌唱のみを担当した。11月21日には、「東京事変 live tour 2007 Spa <span class="ni">&amp;amp;</span> Treatment」で披露された新曲「閃光少女」を含むミュージック・ビデオ集『[[閃光少女]]』が発売された。
+
+2008年、椎名林檎としてのデビュー10周年ということもあり、椎名は久しぶりにソロ活動を再開した。そのため、夏に開催された[[ライジング・サン・ロックフェスティバル]]には、ソロとバンドの両名義での参加となったが、東京事変としての活動は限定的だった。
+
+=== 2009年 - 2011年 ===
+[[2009年]]、前年に引き続き、椎名はソロとしての活動を継続して久しぶりのニュー・アルバムを発表した。そのため、年前半は椎名以外のメンバーもそれぞれの活動に専念することになった。亀田は本業のプロデューサーとして様々なアーティストたちと仕事をし、刄田は[[フジファブリック]]のレコーディングやライブにサポート・メンバーとして参加した。また伊澤は、[[ELLEGARDEN]]（現在活動休止中）の細美武士が結成したバンド「[[the HIATUS]]」にツアーメンバーとして参加した<span class="ni">&amp;lt;</span>ref group=<span class="ni">&amp;quot;</span>注<span class="ni">&amp;quot;&amp;gt;</span>[[堀江博久]]が出演できない時の代役、後に正式参加。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+
+10月1日、年末の[[COUNTDOWN JAPAN#COUNTDOWN JAPAN 09/10|COUNTDOWN JAPAN 09/10]]への出演が発表された。また同年末、4作目のアルバムへ向けて2年ぶりに活動を再開。12月2日には6枚目のシングル『[[能動的三分間]]』を発売した。この作品は自身初のオリコンシングルチャート初登場1位を獲得した。同楽曲は[[江崎グリコ]]「ウォータリング キスミントガム」のCMソングに起用され、そのイメージキャラクターに椎名が起用された（また、同CMのナレーションは浮雲が担当している）。椎名がCMに出演するのは初めてのことであった。
+
+[[2010年]]2月24日には4作目となるアルバム『&#39;&#39;&#39;[[スポーツ (東京事変のアルバム)|スポーツ]]&#39;&#39;&#39;』が発売され、アルバムでは『大人（アダルト）』以来のオリコンチャート1位を獲得した。同年3月からは全国ツアー「[[ウルトラC (東京事変の映像作品)|東京事変 live tour 2010 ウルトラC]]」が開催された。同年7月21日より[[テレビ朝日]]系[[金曜ナイトドラマ]]『[[熱海の捜査官]]』主題歌の「[[天国へようこそ]]」が、28日には「ウォータリング キスミント」CMソングに起用された「[[ドーパミント!]]」が配信限定で発売された。8月25日には先のライブツアーの模様を収録した『[[ウルトラC (東京事変の映像作品)|ウルトラC]]』と、2007年に行われたライブハウスツアーの模様を収録した『[[Spa <span class="ni">&amp;amp;</span> Treatment]]』を同時発売した。また『ウルトラC』は9月8日に[[Blu-ray Disc]]が発売された。
+
+[[2011年]]2月23日には7枚目のシングル『[[空が鳴っている/女の子は誰でも|空が鳴っている／女の子は誰でも]]』を発売する予定だったが、同年2月10日に刄田が公務執行妨害で逮捕されたため、発売延期とプロモーション活動の自粛を発表した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite web|url=http://emimusic.jp/tokyojihen/news/|title=東京事変｜NEWS|(2011年2月12日) |accessdate=2011年2月13日 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。「空が鳴っている」は4度目となる「ウォータリング キスミント」のCMソングに、「女の子は誰でも」は[[資生堂]]「マキアージュ」のCMソングにそれぞれ起用され、同時にイメージキャラクターに椎名が起用されることが決定していたが、この不祥事により、キスミントのCMでは16日から名義を「椎名林檎」とした上で、同楽曲の別アレンジバージョンが使用されることとなった。マキアージュのCMも同様の処置が取られ、こちらは期日通りに放映された。また、[[テレビ朝日]]系列『[[ミュージックステーション]]』に2週出演予定が取り消される事態にもなった。3月14日に刄田は略式裁判により罰金刑となったため、協議の結果4月5日から活動を再開することとなった。一連の件に関して、刄田は公式ウェブサイトにて謝罪している。また、発売未定だった上記シングルは5月11日に発売された。6月29日には5作目のアルバム『&#39;&#39;&#39;[[大発見]]&#39;&#39;&#39;』が、9月21日には新曲「ハンサム過ぎて」を含むミュージック・ビデオ集『[[CS Channel]]』が発売された。また、9月30日からはライブツアー『[[Discovery (東京事変の映像作品)|東京事変 Live Tour 2011 Discovery]]』が開催された。12月31日には椎名が『[[第62回NHK紅白歌合戦|NHK紅白歌合戦]]』に初出場を果たし、それに伴いバンドメンバーも出演した。
+
+=== 2012年 - 2013年 ===
+2012年1月11日、解散を発表した。椎名本人による解散声明文に「事変は来る[[閏日]]解散致します」とあり、解散日は2012年2月29日に決定した<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>{{cite news | title = 東京事変がバンド解散を発表 | url = http://natalie.mu/music/news/62510 | newspaper = [[ナタリー (ニュースサイト)|ナタリー]] | date = 2012-01-11 | accessdate =2012-01-11 }}<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。1月18日、バンドメンバーがそれぞれ持ち寄った楽曲5曲を収録したミニアルバム『[[color bars]]』が、同年2月15日には2011年に行われたツアーの模様を収録した『[[Discovery (東京事変の映像作品)|Discovery]]』と、それまでに行われたライブの中から厳選された音源を収録した初の[[ライブ・アルバム|ライブベストアルバム]]『[[東京コレクション (アルバム)|東京コレクション]]』を発売した。2月14日より、最後のツアー「東京事変 Live Tour 2012 Domestique Bon Voyage」を開催。2月29日にはオフィシャルブック『チャンネルガイド -東京事変オフィシャルブック-』（[[スイッチ・パブリッシング]]刊行）を発売し、同日の[[日本武道館]]公演をもって解散した。6月13日には同ツアーの最終公演を収録したDVD及びBlu-ray Disc『[[Bon Voyage (東京事変の映像作品)|Bon Voyage]]』を発売した。8月29日にはシングルのカップリング曲を収録した『[[深夜枠]]』と、結成から解散までのライブのドキュメンタリー映像を収録したライブヒストリービデオ『[[珍プレー好プレー (東京事変の映像作品)|珍プレー好プレー]]』が発売された。
+
+2013年2月27日には[[CD-BOX]]『[[Hard Disk]]』、[[ミュージック・ビデオ]]集『[[Golden Time (東京事変の映像作品)|Golden Time]]』がそれぞれ発売された。
+
+== 作品 ==
+=== シングル ===
+{| class=wikitable border=<span class="ni">&amp;quot;</span>1<span class="ni">&amp;quot;</span> cellpadding=<span class="ni">&amp;quot;</span>3<span class="ni">&amp;quot;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;発売日&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;タイトル&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;備考&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;規格品番&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>1st<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2004年9月8日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[群青日和]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 三部作インデックス仕様<span class="ni">&amp;lt;</span>br<span class="ni">&amp;gt;</span>[[三洋電機]]「[[au (携帯電話)|au]] [[W21SA]]」CMソング<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-4884<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2nd<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2004年10月20日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[遭難 (曲)|遭難]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 三部作インデックス仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-4994<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>3rd<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2005年11月2日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[修羅場 (曲)|修羅場]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[フジテレビジョン|フジテレビ]]系[[ドラマ]]『[[木曜劇場]]・[[大奥 (フジテレビの時代劇)#2005年版『大奥〜華の乱〜』|大奥〜華の乱〜]]』主題歌<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-4936<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>4th<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2007年7月11日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[OSCA (曲)|OSCA]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 ギザギザ仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-40125<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>5th<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2007年8月22日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[キラーチューン]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 ギザギザ仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-40137<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>6th<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2009年12月2日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[能動的三分間]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 全国ツアーチケット先行抽選予約案内封入<span class="ni">&amp;lt;</span>br<span class="ni">&amp;gt;</span>[[江崎グリコ]]「ウォータリングキスミント」CMソング<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-40280<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>7th<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2011年5月11日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[空が鳴っている/女の子は誰でも|空が鳴っている／女の子は誰でも]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 全国ツアーチケット先行抽選受付シリアル・ナンバー封入<span class="ni">&amp;lt;</span>br<span class="ni">&amp;gt;</span>「空が鳴っている」江崎グリコ「ウォータリングキスミント」CMソング<span class="ni">&amp;lt;</span>br<span class="ni">&amp;gt;</span>「女の子は誰でも」[[資生堂]]「[[MAQuillAGE|マキアージュ]]」CMソング<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-40320<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|}
+
+=== 配信限定トラック ===
+{| class=wikitable border=<span class="ni">&amp;quot;</span>1<span class="ni">&amp;quot;</span> cellpadding=<span class="ni">&amp;quot;</span>3<span class="ni">&amp;quot;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;発売日&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;タイトル&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;備考&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|rowspan=<span class="ni">&amp;quot;</span>3<span class="ni">&amp;quot;</span> | <span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2006年3月23日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;秘密 for DJ&#39;&#39;&#39;
+|rowspan=<span class="ni">&amp;quot;</span>3<span class="ni">&amp;quot;</span> | <span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集『[[ADULT VIDEO]]』に収録されている、シングル・アルバム収録の別バージョン。<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>
+|-
+|&#39;&#39;&#39;恋は幻 for musician&#39;&#39;&#39;
+|-
+|&#39;&#39;&#39;黄昏泣き for mother&#39;&#39;&#39;
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2006年8月30日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[少女ロボット]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブツアー「[[Just can&#39;t help it.|<span class="ni">&amp;quot;</span>DOMESTIC!<span class="ni">&amp;quot;</span>Just can&#39;t help it.]]」にてセルフカバーされ、DVD発売に先駆けて発売した。<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2010年7月28日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[ドーパミント!]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[江崎グリコ]]「ウォータリングキスミント」CMソング。<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2011年4月12日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[夜明けのうた]]&#39;&#39;&#39;
+| <span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>[[岸洋子]]のカバー曲。[[YouTube]]にて公式配信された<span class="ni">&amp;lt;</span>ref<span class="ni">&amp;gt;</span>[http://www.youtube.com/watch?v=Qj_OGCbqplU 東京事変 - 夜明けのうた（EMI Records Japan 公式チャンネル）。]<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2011年9月21日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[天国へようこそ|天国へようこそ Tokyo Bay Ver.]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集『[[CS Channel]]』収録の未発表曲で、[[テレビ朝日]]系列[[金曜ナイトドラマ]]『[[熱海の捜査官]]』の最終話の劇中歌。<span class="ni">&amp;lt;</span>br<span class="ni">&amp;gt;</span>発売日は9月21日とされているが、[[iTunes Store]]ではそれより早く配信が開始された。<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|}
+
+=== アルバム ===
+==== スタジオ・アルバム ====
+{| class=wikitable border=<span class="ni">&amp;quot;</span>1<span class="ni">&amp;quot;</span> cellpadding=<span class="ni">&amp;quot;</span>3<span class="ni">&amp;quot;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;発売日&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;タイトル&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;備考&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;規格品番&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>1st<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2004年11月25日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[教育 (東京事変のアルバム)|教育]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 三部作インデックス仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-25452<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!rowspan=<span class="ni">&amp;quot;</span>2<span class="ni">&amp;quot;</span>|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2nd<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|rowspan=<span class="ni">&amp;quot;</span>2<span class="ni">&amp;quot;</span>|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2006年1月25日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|rowspan=<span class="ni">&amp;quot;</span>2<span class="ni">&amp;quot;</span>|&#39;&#39;&#39;[[大人 (アダルト)|大人（アダルト）]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 <span class="ni">&amp;quot;</span>HOMME<span class="ni">&amp;quot;</span>仕様【CD+DVD：2枚組】<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-25884<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>通常盤 <span class="ni">&amp;quot;</span>FEMME<span class="ni">&amp;quot;</span>仕様【CD】<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-25885<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>3rd<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2007年9月26日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[娯楽 (バラエティ)|娯楽（バラエティ）]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 ギザギザ仕様 feat.スリーブケース<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-26350<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>4th<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2010年2月24日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[スポーツ (東京事変のアルバム)|スポーツ]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 金メダルエンボススリーブ・ケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-26940<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>5th<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2011年6月29日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[大発見]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 大発見スリーブ・ケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-27070<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>Mini<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年1月18日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[color bars]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産分のみの特典
+*カラー・バー紙ジャケット仕様
+*東京事変メンバー・フォトカード封入
+*東京事変 live tour 2012 Domestique Bon Voyage 抽選予約案内封入<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-22311<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|}
+
+==== コンピレーション・アルバム ====
+{| class=wikitable border=<span class="ni">&amp;quot;</span>1<span class="ni">&amp;quot;</span> cellpadding=<span class="ni">&amp;quot;</span>3<span class="ni">&amp;quot;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;発売日&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;タイトル&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;備考&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;規格品番&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・アルバム<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年2月15日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[東京コレクション (アルバム)|東京コレクション]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 紙ジャケット仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-28045<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>カップリング・アルバム<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年8月29日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[深夜枠]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 紙ジャケット仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-29000<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>コンプリートBOX<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2013年2月27日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Hard Disk]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>完全限定生産BOX ハードカバー・ブック仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOCT-29131<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|}
+
+=== アナログ盤 ===
+{| class=wikitable border=<span class="ni">&amp;quot;</span>1<span class="ni">&amp;quot;</span> cellpadding=<span class="ni">&amp;quot;</span>3<span class="ni">&amp;quot;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;発売日&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;タイトル&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;備考&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;規格品番&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2004年11月25日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[群青日和/遭難|群青日和／遭難]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOJT-25542<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2006年3月23日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[ADULT VIDEO ORIGINAL SOUND TRACK]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOJT-25926<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2007年11月21日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[娯楽 (バラエティ) 増刊号|娯楽（バラエティ）増刊号]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOJT-26351<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|}
+
+=== DVD ===
+{| class=wikitable border=<span class="ni">&amp;quot;</span>1<span class="ni">&amp;quot;</span> cellpadding=<span class="ni">&amp;quot;</span>3<span class="ni">&amp;quot;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39; &#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;発売日&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;タイトル&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;備考&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;規格品番&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2004年12月8日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[tokyo incidents vol.1]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 ピクチャーレーベル仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5337<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ+<span class="ni">&amp;lt;</span>br/<span class="ni">&amp;gt;</span>ドキュメント・ビデオ <span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span> 
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2005年7月13日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Dynamite in]]&#39;&#39;&#39;
+|
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5400<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2005年8月17日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Dynamite out]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 “出入口ケース”（Dynamite in <span class="ni">&amp;amp;</span> out）仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5401<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2006年3月23日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[ADULT VIDEO]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 デジパック仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5469<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2006年9月6日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Just can&#39;t help it.]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 デジパック仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5497<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2007年11月21日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[閃光少女]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 ギザギザ仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5540<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|rowspan=2 |<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2010年3月26日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+| rowspan=2 | &#39;&#39;&#39;[[Spa <span class="ni">&amp;amp;</span> Treatment]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ会場・通信販売限定<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>kro-10001<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2010年8月25日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>一般販売<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>QIFK-50105<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2010年8月25日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[ウルトラC (東京事変の映像作品)|ウルトラC]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5678<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2011年9月21日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[CS Channel]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 CS透明ケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5712<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年2月15日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Discovery (東京事変の映像作品)|Discovery]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 スリーブケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5723<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年6月13日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Bon Voyage (東京事変の映像作品)|Bon Voyage]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 スリーブケース仕様 <span class="ni">&amp;amp;</span> 壱百万事変紙幣封入<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5737<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年8月29日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[珍プレー好プレー (東京事変の映像作品)|珍プレー好プレー]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 スリーブケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5750<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2013年2月27日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Golden Time (東京事変の映像作品)|Golden Time]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 スリーブケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOBF-5767<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|}
+
+=== Blu-ray Disc ===
+{| class=<span class="ni">&amp;quot;</span>wikitable<span class="ni">&amp;quot;</span>
+|- bgcolor=<span class="ni">&amp;quot;</span>#CCCCCC<span class="ni">&amp;quot;</span>
+|-
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39; &#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;発売日&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;タイトル&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;備考&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+!<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>&#39;&#39;&#39;規格品番&#39;&#39;&#39;<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2010年9月8日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[ウルトラC (東京事変の映像作品)|ウルトラC]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOXF-5678<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2011年9月21日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[CS Channel]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 CS透明ケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOXF-5712<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年2月15日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Discovery (東京事変の映像作品)|Discovery]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 スリーブケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOXF-5723<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年6月13日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Bon Voyage (東京事変の映像作品)|Bon Voyage]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 スリーブケース仕様 <span class="ni">&amp;amp;</span> 壱百万事変紙幣封入<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOXF-5737<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ライブ・ビデオ<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2012年8月29日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[珍プレー好プレー (東京事変の映像作品)|珍プレー好プレー]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 スリーブケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOXF-5750<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|-
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>ミュージック・ビデオ集<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>2013年2月27日<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|&#39;&#39;&#39;[[Golden Time (東京事変の映像作品)|Golden Time]]&#39;&#39;&#39;
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>初回生産限定盤 スリーブケース仕様<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|<span class="ni">&amp;lt;</span>small<span class="ni">&amp;gt;</span>TOXF-5767<span class="ni">&amp;lt;</span>/small<span class="ni">&amp;gt;</span>
+|}
+
+== 参加作品 ==
+* [[TOKIO]]
+: シングル『[[雨傘/あきれるくらい 僕らは願おう]]』（2008年9月3日）- 表題曲「雨傘」、通常盤のみ収録されている「渦中の男」の編曲を担当（作詞・作曲は椎名）。
+* [[ともさかりえ]]
+: アルバム『[[トリドリ。]]』（2009年6月24日）-「都会のマナー」の編曲・演奏を担当（作詞・作曲は椎名）。
+* [[PUFFY]]
+: シングル『[[日和姫]]』（2009年2月25日）- 表題曲「日和姫」の演奏に参加（作詞・作曲・編曲は椎名）。
+: アルバム『[[Bring it!]]』（2009年6月17日）-「日和姫」、「主演の女」の演奏に参加（作詞・作曲・編曲は椎名）。
+* [[栗山千明]]
+: シングル『[[おいしい季節/決定的三分間]]』（2011年3月2日）- 表題曲「おいしい季節」、「決定的三分間」の演奏に参加（作詞・作曲・編曲は椎名）。
+: シングル『[[月夜の肖像]]』（2011年11月23日）- 表題曲「月夜の肖像」、カップリング曲「青春の瞬き」の演奏に参加（作詞・作曲・編曲は椎名）。
+* [[椎名林檎]]
+: シングル『[[カーネーション (椎名林檎の曲)|カーネーション]]』（2011年11月2日）- 表題曲「カーネーション」、カップリング曲「私の愛するひと」、「人生は思い通り」の演奏に参加。
+
+== 未音源化曲 ==
+* &#39;&#39;&#39;事変音頭&#39;&#39;&#39;
+: 2004年に行われたいくつかの[[ロック・フェスティバル]]で披露された曲<span class="ni">&amp;lt;</span>ref name=<span class="ni">&amp;quot;</span>channel guide<span class="ni">&amp;quot;&amp;gt;</span>『チャンネルガイド -東京事変オフィシャルブック-』。<span class="ni">&amp;lt;</span>/ref<span class="ni">&amp;gt;</span>。
+* &#39;&#39;&#39;ゴング&#39;&#39;&#39;
+: 2006年のライブ・イベント「[[SOCIETY OF THE CITIZENS|SOCIETY OF THE CITIZENS vol.1]]」で披露された曲<span class="ni">&amp;lt;</span>ref name=<span class="ni">&amp;quot;</span>channel guide<span class="ni">&amp;quot;</span> /<span class="ni">&amp;gt;</span>。
+
+== 出演したコンサート ==
+=== デビュー前 ===
+* JIGHEAD / <span class="ni">&amp;quot;</span>PSYHCHO JUSTICE レコ発 LIVE<span class="ni">&amp;quot;</span> 
+: 2003年7月18日 新宿LOFT
+* 0724 YAMABIKARI（2004年7月24日）
+: [[チキンジョージ|神戸チキンジョージ]]
+* [[FM802#MEET THE WORLD BEAT|MEET THE WORLD BEAT]]（2004年7月25日）
+* [[フジ・ロック・フェスティバル#2004年|FUJI ROCK FESTIVAL &#39;04]]（2004年7月30日）
+* SUNSET LIVE 2004（2004年9月3日）
+
+=== デビュー後 ===
+* 巻舌 発祥地記念 ～導火線はこちら～ yokosuka dynamite!
+: 2005年1月15日 [[よこすか芸術劇場]]
+: 東京事変 live tour 2005“dynamite!”の林檎班会員限定の公開ゲネプロ
+* 東京事変 live tour 2005“dynamite!”（2005年1月17日 - 3月16日）
+: 松山、広島、金沢、京都、札幌、仙台、大阪、福岡、名古屋、渋谷
+: &#39;&#39;詳細は[[Dynamite in]]・[[Dynamite out]]を参照。&#39;&#39;
+* [[第一回林檎班大会の模様|第1回林檎班大会 アダルト・オンリー]]
+: 2005年12月12日・13日 恵比寿ザ・ガーデンホール、12月20日・21日 [[UNIT|代官山UNIT]]
+: 林檎班会員限定イベント
+* [[DOMESTIC! Virgin LINE]]
+: 2006年2月19日 [[日本武道館]]、2月21日 [[大阪城ホール]]
+* [[Just can&#39;t help it.|東京事変 “DOMESTIC!”Just can&#39;t help it.]]（2006年4月7日 - 5月30日）
+: 鎌倉、札幌、大宮、新潟、仙台、盛岡、福岡、倉敷、広島、京都、富山、名古屋、静岡、大阪、渋谷、沖縄
+* [[SOCIETY OF THE CITIZENS|SOCIETY OF THE CITIZENS vol.1]]
+: 2006年7月2日 [[日比谷野外音楽堂]]
+* [[COUNTDOWN JAPAN#COUNT DOWN JAPAN 06/07|COUNTDOWN JAPAN 06/07]]
+: 2006年12月30日 [[幕張メッセ]]、31日 [[インテックス大阪]]
+* [[Spa <span class="ni">&amp;amp;</span> Treatment|東京事変 live tour 2007 Spa <span class="ni">&amp;amp;</span> Treatment]]（2007年10月18日 - 11月21日）
+: 横浜、名古屋、大阪、福岡、仙台、札幌、東京
+* [[ライジング・サン・ロックフェスティバル#2008年|RISING SUN ROCK FESTIVAL 2008 in EZO]]（2008年8月15日）
+* [[SOCIETY OF THE CITIZENS|SOCIETY OF THE CITIZENS vol.2]]
+: 2008年8月23日・24日 [[JCBホール]]
+* [[COUNTDOWN JAPAN|COUNTDOWN JAPAN 09/10]]（2009年12月30日）
+* [[ウルトラC (東京事変の映像作品)|東京事変 live tour 2010 ウルトラC]]（2010年3月26日 - 5月23日）
+: 川口、宇都宮、新潟、長野、千葉、仙台、青森、福井、名古屋、福岡、大分、札幌、大阪、東京、高松、広島、島根、倉敷
+* EMI ROCKS
+: 2010年11月6日 [[さいたまスーパーアリーナ]]
+* [[テレビ朝日]]ドリームフェスティバル2011
+: 2011年9月24日 日本武道館
+* [[Discovery (東京事変の映像作品)|東京事変 Live Tour 2011 Discovery]]（2011年9月30日 - 12月26日）
+: 府中、静岡、仙台、岩手、札幌、金沢、新潟、大宮、福岡、鹿児島、神戸、倉敷、広島、名古屋、神奈川、大阪、高松、東京、青森、いわき
+* [[Bon Voyage (東京事変の映像作品)|東京事変 LiveTour 2012 Domestique Bon Voyage]]（2012年2月14日 - 2月29日）
+: 2012年2月14日・15日 [[横浜アリーナ]]、2月21日・22日 大阪城ホール、2月28日・29日 日本武道館
+* EMI ROCKS 2012
+: 2012年2月19日 さいたまスーパーアリーナ
+
+== タイアップ一覧 ==
+* &#39;&#39;&#39;群青日和&#39;&#39;&#39; - [[三洋電機]]「[[Au (携帯電話)|au]] [[W21SA]]」CMソング
+* &#39;&#39;&#39;修羅場&#39;&#39;&#39; - [[フジテレビジョン|フジテレビ]]系ドラマ『[[大奥 (フジテレビの時代劇)#2005年版『大奥〜華の乱〜』|大奥〜華の乱〜]]』主題歌
+* &#39;&#39;&#39;金魚の箱&#39;&#39;&#39;（アルバム『[[娯楽 (バラエティ)]]』収録） - 映画『[[魍魎の匣]]』主題歌
+* &#39;&#39;&#39;閃光少女&#39;&#39;&#39; - [[富士重工業|スバル]]「[[スバル・ステラ|軽 STELLA R2]]」CMソング
+* &#39;&#39;&#39;能動的三分間&#39;&#39;&#39; - [[江崎グリコ|グリコ]]「ウォータリングキスミント」CMソング　※椎名本人出演、ナレーションは浮雲
+* &#39;&#39;&#39;勝ち戦&#39;&#39;&#39;（アルバム『[[スポーツ (東京事変のアルバム)|スポーツ]]』収録） - グリコ「ウォータリングキスミント」CMソング　※椎名本人出演、ナレーションは浮雲
+* &#39;&#39;&#39;天国へようこそ&#39;&#39;&#39; - [[テレビ朝日]]系[[金曜ナイトドラマ]]『[[熱海の捜査官]]』主題歌
+* &#39;&#39;&#39;ドーパミント!&#39;&#39;&#39; - グリコ「ウォータリングキスミント」CMソング　※椎名本人出演、ナレーションは伊澤 
+* &#39;&#39;&#39;空が鳴っている&#39;&#39;&#39; - グリコ「ウォータリングキスミント」CMソング　※椎名本人出演・ナレーション
+* &#39;&#39;&#39;女の子は誰でも&#39;&#39;&#39; - [[資生堂]]「[[MAQuillAGE|マキアージュ]]」CMソング　※椎名本人出演、一部ナレーションも担当
+* &#39;&#39;&#39;新しい文明開化&#39;&#39;&#39;（アルバム『[[大発見]]』収録） - [[東京地下鉄|東京メトロ]]CMソング
+
+== 書籍 ==
+=== 楽譜 ===
+全て[[リットーミュージック]]社より発売。
+* &#39;&#39;&#39;オフィシャル・スコア・ブック 教育&#39;&#39;&#39; （2005年1月29日）
+* &#39;&#39;&#39;オフィシャル・スコア・ブック 大人（アダルト）&#39;&#39;&#39; （2006年2月23日）
+* &#39;&#39;&#39;オフィシャル・スコア・ブック 娯楽（バラエティ）&#39;&#39;&#39;  (2007年10月24日）
+* &#39;&#39;&#39;オフィシャル・スコア・ブック スポーツ&#39;&#39;&#39; （2010年8月25日）
+* &#39;&#39;&#39;オフィシャル・スコア・ブック 大発見&#39;&#39;&#39; （2011年9月30日）
+* &#39;&#39;&#39;オフィシャル・スコア・ブック color bars&#39;&#39;&#39; （2012年11月30日）
+* &#39;&#39;&#39;オフィシャル・スコア・ブック 深夜枠&#39;&#39;&#39; （2012年11月30日）
+
+=== オフィシャル・ブック ===
+* &#39;&#39;&#39;チャンネルガイド -東京事変オフィシャルブック-&#39;&#39;&#39; （2012年2月29日/販売終了）
+
+== アプリケーション ==
+* &#39;&#39;&#39;Bon Voyage 東京磁針&#39;&#39;&#39; （2012年6月13日 - 12月31日)
+** [[iOS (アップル)|iOS]]端末（[[iPhone]]・[[iPad]]）に対応。
+* &#39;&#39;&#39;チャンネルガイド -東京事変オフィシャルブック-&#39;&#39;&#39; （2012年8月29日）
+** iOS 5.0以上のiPhone・iPad・[[iPod touch]]とAndroid 2.2以上のAndroid端末（[[スマートフォン]]・[[タブレット (コンピュータ)|タブレット]]）に対応。
+
+== 脚注 ==
+=== 注釈 ===
+{{Reflist|group=<span class="ni">&amp;quot;</span>注<span class="ni">&amp;quot;</span>}}
+=== 出典 ===
+{{Reflist|2}}
+
+== 関連項目 ==
+* [[PE&#39;Z]]
+* [[あっぱ]]
+* [[ペトロールズ]]
+* [[ROCKIN&#39;ON JAPAN]]
+
+== 外部リンク ==
+* [http://www.tokyojihen.com/ 東京事変] - EMI Music Japan による公式ウェブサイト
+* [http://www.emimusic.jp/vmc/artist/domestic/tokyojihen/ 東京事変 | Virgin Music Co. / EMI Music Japan] - [[Virgin Music]] による公式ウェブサイト
+* [http://www.kronekodow.com/ SR猫柳本線] - 椎名林檎、刄田綴色所属事務所公式ウェブサイト
+* [http://www.emimusic.jp/ringo/ 椎名林檎公的サイト] - 椎名林檎公式ウェブサイト
+* [http://ent2.excite.co.jp/music/interview/2010/tokyojihen/ 東京事変インタビュー] - エキサイトMUSIC
+* [http://mfound.jp/news/2012/01/009276.html 東京事変 解散] - mFound entertainment
+* {{YouTube channel|TokyoIncidentsVEVO}}
+
+{{東京事変}}
+
+{{DEFAULTSORT:とうきようしへん}}
+
+[[Category:日本のロック・バンド]]
+[[category:東京事変|*]]
+[[Category:EMIミュージック・ジャパンのアーティスト]]
+[[Category:2003年に結成したバンド]]
+[[Category:2012年に解散したバンド]]
+[[Category:フジロック・フェスティバル出演者]]<span class="nt">&lt;/rev&gt;</span>
+        <span class="nt">&lt;/revisions&gt;</span>
+      <span class="nt">&lt;/page&gt;</span>
+    <span class="nt">&lt;/pages&gt;</span>
+  <span class="nt">&lt;/query&gt;</span>
+<span class="nt">&lt;/api&gt;</span>
+</pre></div>
+</div><noscript><img src="//ja.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div><div class="printfooter">
+「<a dir="ltr" href="https://ja.wikipedia.org/wiki/特別:ApiHelp">https://ja.wikipedia.org/wiki/特別:ApiHelp</a>」から取得</div>
+			</div>
+		</div>
+
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.loader.load(["site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","ext.gadget.VectorClassicFonts","ext.gadget.WikiMiniAtlas","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","schema.UniversalLanguageSelector","ext.uls.eventlogger","ext.uls.compactlinks","ext.uls.interlanguage","ext.centralNotice.geoIP"]);});</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set( {
+    "wgPageParseReport": []
+} );});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":105,"wgHostname":"mw1193"});});</script>		</body></html>
